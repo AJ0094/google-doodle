@@ -2,8 +2,29 @@
 
 @import 'google-homepage';
 
-body {
-    background: maroon;
+//First Frame
+img {
+    opacity: .5;
+    width:40%;
+    transform: scale(.75) rotate(0);
+    
+    transition: transform 1s;
+  
 }
 
+//Last Frame
+img:hover {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+}
 
+.shape{fill:none;
+    stroke:#000000;
+    stroke-width:4;
+    stroke-miterlimit:10; 
+    transition: stroke 1s;
+}
+
+.shape: hover {
+    stroke: red;
+}
